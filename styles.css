@@ -1,4 +1,3 @@
-/* styles.css */
 
 body {
     font-family: 'Arial', sans-serif;
@@ -56,30 +55,35 @@ body {
     font-family: 'vjs-woff';
     src: url("fonts/vjs.woff");
 }
-.text1{
+.text1 {
     font-family: 'Cor-MediumItalic';
 }
-.text2{
+
+.text2 {
     font-family: 'Quicksand-Medium';
 }
-.text3{
+
+.text3 {
     font-family: 'Cor-MediumItalic';
     position: relative;
 }
-.text3 img{
+
+.text3 img {
     position: absolute;
     width: 100px;
     top: 50%;
     left: 50%;
     margin-top: 20px;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     opacity: 0.5;
 
 }
-.text4{
+
+.text4 {
     font-family: 'Quicksand-Regular';
 }
-.background-body{
+
+.background-body {
     background-image: url("images/background/1.png");
     background-color: rgb(229, 221, 196);
     position: absolute;
@@ -89,6 +93,7 @@ body {
     bottom: 0;
     background-attachment: fixed;
 }
+
 .header-main {
     position: fixed;
     z-index: 1;
@@ -99,7 +104,7 @@ body {
 }
 
 .header-wrapper {
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -108,7 +113,8 @@ body {
 .logo-container img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 10px; /* Giảm khoảng cách dưới logo */
+    margin-bottom: 10px;
+    /* Giảm khoảng cách dưới logo */
 }
 
 .main-nav {
@@ -117,23 +123,28 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .main-nav .nav-link {
     color: white;
 }
+
 .nav-item {
     margin-right: 15px;
 }
 
 .language-icon img {
-    width: 25px; /* Giảm kích thước biểu tượng ngôn ngữ */
+    width: 25px;
+    /* Giảm kích thước biểu tượng ngôn ngữ */
     height: auto;
-    
+
 }
+
 .carousel-caption {
     position: absolute;
     height: 56%;
-    
+
 }
+
 .carousel-indicators {
     display: flex;
     flex-direction: column;
@@ -142,12 +153,14 @@ body {
     height: 100%;
     margin-right: 50px;
 }
-.carousel-indicators [data-bs-target]{
+
+.carousel-indicators [data-bs-target] {
     width: 15px;
     height: 15px;
     border: 2px solid white;
     background-color: rgba(255, 255, 255, 0);
 }
+
 .carousel-indicators button {
     width: 12px;
     height: 12px;
@@ -164,45 +177,54 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px; /* Khoảng cách giữa các phần tử */
+    padding: 20px;
+    /* Khoảng cách giữa các phần tử */
 }
 
 .col-divider {
-    border-right: 1px solid #ccc; /* Màu và độ dày đường gạch dọc */
-    padding-right: 20px; /* Khoảng cách giữa đường gạch và nội dung */
+    border-right: 2px solid #ccc;
+    /* Màu và độ dày đường gạch dọc */
+    padding-right: 20px;
+
+    /* Khoảng cách giữa đường gạch và nội dung */
 }
 
 /* Định dạng cho cột cuối cùng */
 .col:last-child {
-    border-right: none; /* Loại bỏ đường gạch dọc cho cột cuối cùng */
+    border-right: none;
+    /* Loại bỏ đường gạch dọc cho cột cuối cùng */
 }
 
-.bgColor1{
-    background-color:rgb(247, 243, 231);
+.bgColor1 {
+    background-color: rgb(247, 243, 231);
     text-align: center;
 }
+
 span.strikethrough {
     text-decoration: line-through;
-    background-color:white;
+    background-color: white;
     color: #757070;
     border-radius: 3px;
     padding: 2px 4px;
     width: 100px;
     height: 20px;
-  }
+}
+
 .card p {
     text-align: justify;
-  font-size: 16px;
-  line-height: 1.5;
-  }
+    font-size: 16px;
+    line-height: 1.5;
+}
+
 .card img {
     text-align: center;
     height: 200px;
     width: 100%;
     margin: auto;
-    
+
     object-fit: contain;
-  }
+}
+
 .card {
     margin-left: 10px;
     margin-right: 10px;
@@ -211,14 +233,21 @@ span.strikethrough {
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
-  }
-.container_products{
-    background-color:cornsilk;
 }
-.img-card{
-    
+
+.container_products {
     background-color: cornsilk;
 }
+
+.container_products1 {
+    background-color: cornsilk;
+}
+
+.img-card {
+
+    background-color: cornsilk;
+}
+
 .text-layer {
     position: absolute;
     top: 0;
@@ -226,4 +255,104 @@ span.strikethrough {
     transform: translate(-50%, 0);
     font-size: 24px;
     color: white;
-  }
+}
+
+.promotion-img img {
+    border-top-right-radius: 45%;
+    border-top-left-radius: 45%;
+}
+
+#carouselExampleIndicators1 .carousel-indicators {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+    margin-right: 50px;
+}
+
+#carouselExampleIndicators1 .carousel-indicators [data-bs-target] {
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgb(62, 60, 60);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#carouselExampleIndicators1 .carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: yellow;
+    margin-bottom: 10px;
+}
+
+#carouselExampleIndicators1 .carousel-indicators .active {
+    background-color: rgb(209, 209, 59);
+}
+
+.space {
+    background-image: url('images/background/1.png');
+    /* Đường dẫn đến hình ảnh bạn muốn sử dụng */
+    background-size: cover;
+    /* Chọn kiểu hiển thị ảnh, có thể là 'cover', 'contain', hoặc các giá trị khác tùy thuộc vào yêu cầu của bạn */
+    background-position: center;
+    /* Điều chỉnh vị trí hiển thị ảnh, có thể là 'center', 'top', 'bottom', 'left', 'right', hoặc giá trị khác */
+    height: 100px;
+    /* Đặt chiều cao của phần space, giống với chiều cao đã đặt inline trong HTML */
+    background-color: white;
+}
+
+.promotions {
+    background-color: cornsilk;
+}
+
+.container-time {
+    text-align: center;
+}
+
+.container-time .col-divider {
+
+    border-right: 2px solid #ccc;
+    /* Màu và độ dày đường gạch dọc */
+    padding-right: 10px;
+
+    /* Khoảng cách giữa đường gạch và nội dung */
+    width: 20%;
+}
+
+.container-time .d-flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px 0 10px;
+
+}
+
+.container-time .col-divider:last-child {
+    border-right: none;
+}
+
+.container-time p {
+    font-family: 'Roboto-ExtraBold';
+    font-size: 20px;
+}
+
+.khung-tren {
+    position: absolute;
+    width: 100%;
+    height: 305px;
+    left: 67px;
+    top: -20px;
+}
+
+.khung-duoi {
+    position: absolute;
+    width: 92%;
+    height: 295px;
+    left: 120px;
+    bottom: -60px;
+}
+
+.img-pr {
+    margin: -35px 0 1rem;
+}
