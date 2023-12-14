@@ -347,12 +347,29 @@ span.strikethrough {
 
 .khung-duoi {
     position: absolute;
-    width: 92%;
-    height: 295px;
-    left: 120px;
+    width: 90%;
+    height: 300px;
+    left: 125px;
     bottom: -60px;
 }
 
 .img-pr {
     margin: -35px 0 1rem;
+}
+.cards{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.reviews{
+    background-image: url("images/background/1.png");
+    background-color: rgb(253, 251, 242);
+}
+.comment h5{
+    font-family: 'Roboto-ExtraBold';
+    font-size: 30px;
 }
