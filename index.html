@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" type="text/css" href="slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" type="text/css"
     href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
@@ -23,34 +23,87 @@
 <body>
   <div class="header-main">
     <div class="header-wrapper">
-      <nav class="main-nav">
-        <ul class="nav text-white d-flex align-items-center">
-          <li class="nav-item">
-            <a class="nav-link" href="homepage.html">
-              <i class="fa-solid fa-house"></i>
+      <nav class="navbar navbar-expand-lg header-main">
+        <div class="container-fluid header-wrapper">
+          <div class="d-flex justify-content-between align-items-center w-100">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar"
+              aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand d-lg-none" href="#">
+              <img src="images/logo/logo.png" alt="Beauty Shop Logo">
             </a>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="#">Sản phẩm</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Giới thiệu</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Khuyến mãi</a></li>
-          <li class="nav-item">
-            <img src="images/logo/logo.png" alt="Beauty Shop Logo">
-          </li>
-          <li class="nav-item"><a class="nav-link" href="#">Tin tức</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Đại lý</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
-          <li class="nav-item">
-            <a class="nav-link" href="">
-              <i class="fa-solid fa-cart-shopping"></i>
-            </a>
-          </li>
-          <li class="nav-item language-icon" id="viFlag"><a class="nav-link" href="#"
-              onclick="changeLanguage('vi')"><img src="images/language/vi.jpg" alt="Vietnam"></a></li>
-          <li class="nav-item language-icon" id="enFlag" style="display: none;"><a class="nav-link" href="#"
-              onclick="changeLanguage('en')"><img src="images/language/en.jpg" alt="English"></a></li>
-        </ul>
-      </nav>
+            <div class="navbar-brand d-lg-none d-flex align-items-center">
+              <div class="nav-item">
+                <a class="nav-link" href="">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+              </div>
+              <div class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img id="languageImagenavbar" src="images/language/vi.jpg" alt="Vietnam">
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li class="nav-item language-icon" id="viFlag">
+                    <a class="nav-link" href="#" onclick="changeLanguage('vi', '/images/language/vi.jpg');">
+                      <img src="images/language/vi.jpg" alt="Vietnam">
+                    </a>
+                  </li>
+                  <li class="nav-item language-icon" id="enFlag">
+                    <a class="nav-link" href="#" onclick="changeLanguage('en', '/images/language/en.jpg');">
+                      <img src="images/language/en.jpg" alt="English">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="collapse navbar-collapse main-nav" id="myNavbar">
+            <ul class="navbar-nav d-flex align-items-center navbar-right">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  <i class="fa-solid fa-house"></i>
+                </a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Sản phẩm</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Giới thiệu</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Khuyến mãi</a></li>
+              <li class="nav-item d-none d-lg-block">
+                <img src="images/logo/logo.png" alt="Beauty Shop Logo">
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Tin tức</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Đại lý</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img id="languageImagetoggle" src="images/language/vi.jpg" alt="Vietnam">
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item language-icon" id="viFlag">
+                    <a class="nav-link" href="#" onclick="changeLanguage('vi', 'images/language/vi.jpg');">
+                      <img src="images/language/vi.jpg" alt="Vietnam">
+                    </a>
+                  </li>
+                  <li class="nav-item language-icon" id="enFlag">
+                    <a class="nav-link" href="#" onclick="changeLanguage('en', 'images/language/en.jpg');">
+                      <img src="images/language/en.jpg" alt="English">
+                    </a>
+                  </li>
+                </ul>
+          </div>
+        </div>
     </div>
+    </nav>
+
+  </div>
   </div>
 
   <!-- Nội dung trang web ở đây -->
@@ -275,7 +328,7 @@
       </h1>
       <p class="text4 text-center">ĐƯỢC ĐÁNH GIÁ CAO NHẤT</p>
     </div>
-    <div id="carouselExampleIndicators1" class="carousel slide">
+    <div id="carouselExampleIndicators1" class="carousel slide" data-bs-interval="4000">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active"
           aria-current="true" aria-label="Slide 1"></button>
@@ -460,38 +513,651 @@
       </h1>
       <p class="text4 text-center">KHÁCH HÀNG NÓI GÌ VỀ SẢN PHẨM</p>
     </div>
-    <div class="comment">
-      <div class="cmt1 col-6 d-flex-column-center">
-        <a href="">
-          <i class="fa-solid fa-quote-left" style="font-size: 30px;"></i>
-        </a>
-        <h5>Sản Phẩm Tốt Ngoài Mong Đợi</h5>
-        <p>"Sản phẩm sử dụng rất tốt, giá cả hợp lí, sẽ ủng hộ tiếp"</p>
+    <div id="carouselExampleIndicators2" class="carousel slide" data-bs-interval="4000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="comment  row justify-content-center">
+            <div class="cmt1 d-flex-column-center">
+              <a href="">
+                <i class="fa-solid fa-quote-left" style="font-size: 30px;"></i>
+              </a>
+              <h5>Sản Phẩm Tốt Ngoài Mong Đợi</h5>
+              <p style="font-size: 20px;">"Sản phẩm sử dụng rất tốt, giá cả hợp lí, sẽ ủng hộ tiếp"</p>
+              <div class="card1 ">
+                <img class="card1-img-top" src="images/avatar/1.png" alt="Vy Hoàng">
+                <div class="card1-body">
+                  <p class="card1-title">Vy Hoàng</p>
+                  <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half checked"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cmt2  d-flex-column-center">
+              <a href="">
+                <i class="fa-solid fa-quote-left" style="font-size: 30px;"></i>
+              </a>
+              <h5>Sản Phẩm Tốt Ngoài Mong Đợi</h5>
+              <p style="font-size: 20px;">"Sản phẩm sử dụng rất tốt, giá cả hợp lí, sẽ ủng hộ tiếp"</p>
+              <div class="card1 ">
+                <img class="card1-img-top" src="images/avatar/2.png" alt="Vy Hoàng">
+                <div class="card1-body">
+                  <p class="card1-title">Vy Hoàng</p>
+                  <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="comment  row justify-content-center">
+            <div class="cmt1 d-flex-column-center">
+              <a href="">
+                <i class="fa-solid fa-quote-left" style="font-size: 30px;"></i>
+              </a>
+              <h5>Sản Phẩm Tốt Ngoài Mong Đợi</h5>
+              <p style="font-size: 20px;">"Sản phẩm sử dụng rất tốt, giá cả hợp lí, sẽ ủng hộ tiếp"</p>
+              <div class="card1 ">
+                <img class="card1-img-top" src="images/avatar/1.png" alt="Vy Hoàng">
+                <div class="card1-body">
+                  <p class="card1-title">Vy Hoàng</p>
+                  <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half checked"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cmt2  d-flex-column-center">
+              <a href="">
+                <i class="fa-solid fa-quote-left" style="font-size: 30px;"></i>
+              </a>
+              <h5>Sản Phẩm Tốt Ngoài Mong Đợi</h5>
+              <p style="font-size: 20px;">"Sản phẩm sử dụng rất tốt, giá cả hợp lí, sẽ ủng hộ tiếp"</p>
+              <div class="card1 ">
+                <img class="card1-img-top" src="images/avatar/2.png" alt="Vy Hoàng">
+                <div class="card1-body">
+                  <p class="card1-title">Vy Hoàng</p>
+                  <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="comment  row justify-content-center">
+            <div class="cmt1 d-flex-column-center">
+              <a href="">
+                <i class="fa-solid fa-quote-left" style="font-size: 30px;"></i>
+              </a>
+              <h5>Sản Phẩm Tốt Ngoài Mong Đợi</h5>
+              <p style="font-size: 20px;">"Sản phẩm sử dụng rất tốt, giá cả hợp lí, sẽ ủng hộ tiếp"</p>
+              <div class="card1 ">
+                <img class="card1-img-top" src="images/avatar/1.png" alt="Vy Hoàng">
+                <div class="card1-body">
+                  <p class="card1-title">Vy Hoàng</p>
+                  <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cmt2  d-flex-column-center">
+              <a href="">
+                <i class="fa-solid fa-quote-left" style="font-size: 30px;"></i>
+              </a>
+              <h5>Sản Phẩm Tốt Ngoài Mong Đợi</h5>
+              <p style="font-size: 20px;">"Sản phẩm sử dụng rất tốt, giá cả hợp lí, sẽ ủng hộ tiếp"</p>
+              <div class="card1 ">
+                <img class="card1-img-top" src="images/avatar/2.png" alt="Vy Hoàng">
+                <div class="card1-body">
+                  <p class="card1-title">Vy Hoàng</p>
+                  <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="comment  row justify-content-center">
+            <div class="cmt1 d-flex-column-center">
+              <a href="">
+                <i class="fa-solid fa-quote-left" style="font-size: 30px;"></i>
+              </a>
+              <h5>Sản Phẩm Tốt Ngoài Mong Đợi</h5>
+              <p style="font-size: 20px;">"Sản phẩm sử dụng rất tốt, giá cả hợp lí, sẽ ủng hộ tiếp"</p>
+              <div class="card1 ">
+                <img class="card1-img-top" src="images/avatar/1.png" alt="Vy Hoàng">
+                <div class="card1-body">
+                  <p class="card1-title">Vy Hoàng</p>
+                  <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cmt2  d-flex-column-center">
+              <a href="">
+                <i class="fa-solid fa-quote-left" style="font-size: 30px;"></i>
+              </a>
+              <h5>Sản Phẩm Tốt Ngoài Mong Đợi</h5>
+              <p style="font-size: 20px;">"Sản phẩm sử dụng rất tốt, giá cả hợp lí, sẽ ủng hộ tiếp"</p>
+              <div class="card1 ">
+                <img class="card1-img-top" src="images/avatar/2.png" alt="Vy Hoàng">
+                <div class="card1-body">
+                  <p class="card1-title">Vy Hoàng</p>
+                  <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+  <div class="share d-flex flex-column align-items-center">
+    <div class="text-player">
+      <h1 class="text3 text-center">Sản phẩm được yêu thích
+        <img src="images/Icons-svg/lá cây/leaf.svg" alt="la">
+      </h1>
+      <p class="text4 text-center">ĐẸP MỖI NGÀY</p>
+    </div>
+    <div id="carouselExampleIndicators3" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="information container">
+            <div class="row justify-content-center">
+              <div class="information1 col-md-4 mb-3">
+                <div class="img-share">
+                  <img src="images/blog/1.jpg" class="img-fluid"
+                    style="max-width: 100%; height: auto; max-height: 250px; text-align: center;" alt="anh1">
+                </div>
+                <div class="card-information">
+                  <h5 class="card-title1">Cách làm đẹp da bằng tổ yến ít ai biết</h5>
+                  <p>Trong tổ yến có rất giàu chất đạm, đường bột, khoáng vi lượng, chất xơ và 18 loại axit amin khác.
+                    Ngoài các tác dụng tăng cường sức khoẻ, tổ yến còn có tác dụng đặc biệt trong việc chăm sóc da...
+                  </p>
+                </div>
+              </div>
 
+              <div class="information1 col-md-4 mb-3">
+                <div class="img-share">
+                  <img src="images/blog/2.jpg" class="img-fluid"
+                    style="max-width: 100%; height: auto; max-height: 250px; text-align: center;" alt="anh1">
+                </div>
+                <div class="card-information">
+                  <h5 class="card-title1">Mặt nạ Yến sào: Giải pháp làm đẹp, Trẻ hoá làn da</h5>
+                  <p>Bên cạnh công dụng bồi bổ sức khoẻ, Yến sào còn được biết đến là một loại nguyên liệu làm đẹp và
+                    chăm sóc da cho chị em phụ nữ. Sau đây hãy cùng HSkincare khám phá ngay các cách làm đẹp
+                  </p>
+                </div>
+              </div>
+
+              <div class="information1 col-md-4 mb-3">
+                <div class="img-share text-center">
+                  <img src="images/blog/3.jpg" class="img-fluid"
+                    style="max-width: 100%; height: auto; max-height: 250px; text-align: center;" alt="anh1">
+                </div>
+                <div class="card-information">
+                  <h5 class="card-title1">Công dụng của Yến sào đối với làn da bạn nên biết</h5>
+                  <p>
+                    Nước yến là loại thực phẩm giàu dinh dưỡng, có nhiều công dụng đối với sức khoẻ và sắc đẹp. Tuy
+                    nhiên, có nhiều chị em vẫn thắc mắc liệu uống nước yến có đẹp da không? Hãy cùng HSkincare...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="information container">
+            <div class="row justify-content-center">
+              <div class="information1 col-md-4 mb-3">
+                <div class="img-share">
+                  <img src="images/blog/1.jpg" class="img-fluid"
+                    style="max-width: 100%; height: auto; max-height: 250px; text-align: center;" alt="anh1">
+                </div>
+                <div class="card-information">
+                  <h5 class="card-title1">Cách làm đẹp da bằng tổ yến ít ai biết</h5>
+                  <p>Trong tổ yến có rất giàu chất đạm, đường bột, khoáng vi lượng, chất xơ và 18 loại axit amin khác.
+                    Ngoài các tác dụng tăng cường sức khoẻ, tổ yến còn có tác dụng đặc biệt trong việc chăm sóc da...
+                  </p>
+                </div>
+              </div>
+
+              <div class="information1 col-md-4 mb-3">
+                <div class="img-share">
+                  <img src="images/blog/2.jpg" class="img-fluid"
+                    style="max-width: 100%; height: auto; max-height: 250px; text-align: center;" alt="anh1">
+                </div>
+                <div class="card-information">
+                  <h5 class="card-title1">Mặt nạ Yến sào: Giải pháp làm đẹp, Trẻ hoá làn da</h5>
+                  <p>Bên cạnh công dụng bồi bổ sức khoẻ, Yến sào còn được biết đến là một loại nguyên liệu làm đẹp và
+                    chăm sóc da cho chị em phụ nữ. Sau đây hãy cùng HSkincare khám phá ngay các cách làm đẹp
+                  </p>
+                </div>
+              </div>
+
+              <div class="information1 col-md-4 mb-3">
+                <div class="img-share text-center">
+                  <img src="images/blog/3.jpg" class="img-fluid"
+                    style="max-width: 100%; height: auto; max-height: 250px; text-align: center;" alt="anh1">
+                </div>
+                <div class="card-information">
+                  <h5 class="card-title1">Công dụng của Yến sào đối với làn da bạn nên biết</h5>
+                  <p>
+                    Nước yến là loại thực phẩm giàu dinh dưỡng, có nhiều công dụng đối với sức khoẻ và sắc đẹp. Tuy
+                    nhiên, có nhiều chị em vẫn thắc mắc liệu uống nước yến có đẹp da không? Hãy cùng HSkincare...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="information container">
+            <div class="row justify-content-center">
+              <div class="information1 col-md-4 mb-3">
+                <div class="img-share">
+                  <img src="images/blog/1.jpg" class="img-fluid"
+                    style="max-width: 100%; height: auto; max-height: 250px; text-align: center;" alt="anh1">
+                </div>
+                <div class="card-information">
+                  <h5 class="card-title1">Cách làm đẹp da bằng tổ yến ít ai biết</h5>
+                  <p>Trong tổ yến có rất giàu chất đạm, đường bột, khoáng vi lượng, chất xơ và 18 loại axit amin khác.
+                    Ngoài các tác dụng tăng cường sức khoẻ, tổ yến còn có tác dụng đặc biệt trong việc chăm sóc da...
+                  </p>
+                </div>
+              </div>
+
+              <div class="information1 col-md-4 mb-3">
+                <div class="img-share">
+                  <img src="images/blog/2.jpg" class="img-fluid"
+                    style="max-width: 100%; height: auto; max-height: 250px; text-align: center;" alt="anh1">
+                </div>
+                <div class="card-information">
+                  <h5 class="card-title1">Mặt nạ Yến sào: Giải pháp làm đẹp, Trẻ hoá làn da</h5>
+                  <p>Bên cạnh công dụng bồi bổ sức khoẻ, Yến sào còn được biết đến là một loại nguyên liệu làm đẹp và
+                    chăm sóc da cho chị em phụ nữ. Sau đây hãy cùng HSkincare khám phá ngay các cách làm đẹp
+                  </p>
+                </div>
+              </div>
+
+              <div class="information1 col-md-4 mb-3">
+                <div class="img-share text-center">
+                  <img src="images/blog/3.jpg" class="img-fluid"
+                    style="max-width: 100%; height: auto; max-height: 250px; text-align: center;" alt="anh1">
+                </div>
+                <div class="card-information">
+                  <h5 class="card-title1">Công dụng của Yến sào đối với làn da bạn nên biết</h5>
+                  <p>
+                    Nước yến là loại thực phẩm giàu dinh dưỡng, có nhiều công dụng đối với sức khoẻ và sắc đẹp. Tuy
+                    nhiên, có nhiều chị em vẫn thắc mắc liệu uống nước yến có đẹp da không? Hãy cùng HSkincare...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="information container">
+            <div class="row justify-content-center">
+              <div class="information1 col-md-4 mb-3">
+                <div class="img-share">
+                  <img src="images/blog/1.jpg" class="img-fluid"
+                    style="max-width: 100%; height: auto; max-height: 250px; text-align: center;" alt="anh1">
+                </div>
+                <div class="card-information">
+                  <h5 class="card-title1">Cách làm đẹp da bằng tổ yến ít ai biết</h5>
+                  <p>Trong tổ yến có rất giàu chất đạm, đường bột, khoáng vi lượng, chất xơ và 18 loại axit amin khác.
+                    Ngoài các tác dụng tăng cường sức khoẻ, tổ yến còn có tác dụng đặc biệt trong việc chăm sóc da...
+                  </p>
+                </div>
+              </div>
+
+              <div class="information1 col-md-4 mb-3">
+                <div class="img-share">
+                  <img src="images/blog/2.jpg" class="img-fluid"
+                    style="max-width: 100%; height: auto; max-height: 250px; text-align: center;" alt="anh1">
+                </div>
+                <div class="card-information">
+                  <h5 class="card-title1">Mặt nạ Yến sào: Giải pháp làm đẹp, Trẻ hoá làn da</h5>
+                  <p>Bên cạnh công dụng bồi bổ sức khoẻ, Yến sào còn được biết đến là một loại nguyên liệu làm đẹp và
+                    chăm sóc da cho chị em phụ nữ. Sau đây hãy cùng HSkincare khám phá ngay các cách làm đẹp
+                  </p>
+                </div>
+              </div>
+
+              <div class="information1 col-md-4 mb-3">
+                <div class="img-share text-center">
+                  <img src="images/blog/3.jpg" class="img-fluid"
+                    style="max-width: 100%; height: auto; max-height: 250px; text-align: center;" alt="anh1">
+                </div>
+                <div class="card-information">
+                  <h5 class="card-title1">Công dụng của Yến sào đối với làn da bạn nên biết</h5>
+                  <p>
+                    Nước yến là loại thực phẩm giàu dinh dưỡng, có nhiều công dụng đối với sức khoẻ và sắc đẹp. Tuy
+                    nhiên, có nhiều chị em vẫn thắc mắc liệu uống nước yến có đẹp da không? Hãy cùng HSkincare...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-warning">Xem tất cả</button>
+  </div>
+  <div class="news d-flex flex-column align-items-center">
+    <div class="text-player">
+      <h1 class="text3 text-center">Tin tức
+        <img src="images/Icons-svg/lá cây/leaf.svg" alt="la">
+      </h1>
+      <p class="text4 text-center">CẬP NHẬT MỚI NHẤT</p>
+    </div>
+    <div id="carouselExampleIndicators3" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="information container">
+            <div class="row justify-content-center">
+              <div class="information1 col-md-4 mb-3">
+                <div class="img-share">
+                  <img src="images/news/1.jpg" class="img-fluid"
+                    style="max-width: 100%; height: auto; max-height: 250px; text-align: center;" alt="anh1">
+                </div>
+                <div class="card-information">
+                  <h5 class="card-title1">Cách làm đẹp da bằng tổ yến ít ai biết</h5>
+                  <p>Trong tổ yến có rất giàu chất đạm, đường bột, khoáng vi lượng, chất xơ và 18 loại axit amin khác.
+                    Ngoài các tác dụng tăng cường sức khoẻ, tổ yến còn có tác dụng đặc biệt trong việc chăm sóc da...
+                  </p>
+                </div>
+              </div>
+
+              <div class="information1 col-md-4 mb-3">
+                <div class="img-share">
+                  <img src="images/news/2.jpg" class="img-fluid"
+                    style="max-width: 100%; height: auto; max-height: 250px; text-align: center;" alt="anh1">
+                </div>
+                <div class="card-information">
+                  <h5 class="card-title1">Mặt nạ Yến sào: Giải pháp làm đẹp, Trẻ hoá làn da</h5>
+                  <p>Bên cạnh công dụng bồi bổ sức khoẻ, Yến sào còn được biết đến là một loại nguyên liệu làm đẹp và
+                    chăm sóc da cho chị em phụ nữ. Sau đây hãy cùng HSkincare khám phá ngay các cách làm đẹp
+                  </p>
+                </div>
+              </div>
+
+              <div class="information1 col-md-4 mb-3">
+                <div class="img-share text-center">
+                  <img src="images/news/3.jpg" class="img-fluid"
+                    style="max-width: 100%; height: auto; max-height: 250px; text-align: center;" alt="anh1">
+                </div>
+                <div class="card-information">
+                  <h5 class="card-title1">Công dụng của Yến sào đối với làn da bạn nên biết</h5>
+                  <p>
+                    Nước yến là loại thực phẩm giàu dinh dưỡng, có nhiều công dụng đối với sức khoẻ và sắc đẹp. Tuy
+                    nhiên, có nhiều chị em vẫn thắc mắc liệu uống nước yến có đẹp da không? Hãy cùng HSkincare...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="information container">
+            <div class="row justify-content-center">
+              <div class="information1 col-md-4 mb-3">
+                <div class="img-share">
+                  <img src="images/blog/1.jpg" class="img-fluid"
+                    style="max-width: 100%; height: auto; max-height: 250px; text-align: center;" alt="anh1">
+                </div>
+                <div class="card-information">
+                  <h5 class="card-title1">Cách làm đẹp da bằng tổ yến ít ai biết</h5>
+                  <p>Trong tổ yến có rất giàu chất đạm, đường bột, khoáng vi lượng, chất xơ và 18 loại axit amin khác.
+                    Ngoài các tác dụng tăng cường sức khoẻ, tổ yến còn có tác dụng đặc biệt trong việc chăm sóc da...
+                  </p>
+                </div>
+              </div>
+
+              <div class="information1 col-md-4 mb-3">
+                <div class="img-share">
+                  <img src="images/blog/2.jpg" class="img-fluid"
+                    style="max-width: 100%; height: auto; max-height: 250px; text-align: center;" alt="anh1">
+                </div>
+                <div class="card-information">
+                  <h5 class="card-title1">Mặt nạ Yến sào: Giải pháp làm đẹp, Trẻ hoá làn da</h5>
+                  <p>Bên cạnh công dụng bồi bổ sức khoẻ, Yến sào còn được biết đến là một loại nguyên liệu làm đẹp và
+                    chăm sóc da cho chị em phụ nữ. Sau đây hãy cùng HSkincare khám phá ngay các cách làm đẹp
+                  </p>
+                </div>
+              </div>
+
+              <div class="information1 col-md-4 mb-3">
+                <div class="img-share text-center">
+                  <img src="images/blog/3.jpg" class="img-fluid"
+                    style="max-width: 100%; height: auto; max-height: 250px; text-align: center;" alt="anh1">
+                </div>
+                <div class="card-information">
+                  <h5 class="card-title1">Công dụng của Yến sào đối với làn da bạn nên biết</h5>
+                  <p>
+                    Nước yến là loại thực phẩm giàu dinh dưỡng, có nhiều công dụng đối với sức khoẻ và sắc đẹp. Tuy
+                    nhiên, có nhiều chị em vẫn thắc mắc liệu uống nước yến có đẹp da không? Hãy cùng HSkincare...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="information container">
+            <div class="row justify-content-center">
+              <div class="information1 col-md-4 mb-3">
+                <div class="img-share">
+                  <img src="images/blog/1.jpg" class="img-fluid"
+                    style="max-width: 100%; height: auto; max-height: 250px; text-align: center;" alt="anh1">
+                </div>
+                <div class="card-information">
+                  <h5 class="card-title1">Cách làm đẹp da bằng tổ yến ít ai biết</h5>
+                  <p>Trong tổ yến có rất giàu chất đạm, đường bột, khoáng vi lượng, chất xơ và 18 loại axit amin khác.
+                    Ngoài các tác dụng tăng cường sức khoẻ, tổ yến còn có tác dụng đặc biệt trong việc chăm sóc da...
+                  </p>
+                </div>
+              </div>
+
+              <div class="information1 col-md-4 mb-3">
+                <div class="img-share">
+                  <img src="images/blog/2.jpg" class="img-fluid"
+                    style="max-width: 100%; height: auto; max-height: 250px; text-align: center;" alt="anh1">
+                </div>
+                <div class="card-information">
+                  <h5 class="card-title1">Mặt nạ Yến sào: Giải pháp làm đẹp, Trẻ hoá làn da</h5>
+                  <p>Bên cạnh công dụng bồi bổ sức khoẻ, Yến sào còn được biết đến là một loại nguyên liệu làm đẹp và
+                    chăm sóc da cho chị em phụ nữ. Sau đây hãy cùng HSkincare khám phá ngay các cách làm đẹp
+                  </p>
+                </div>
+              </div>
+
+              <div class="information1 col-md-4 mb-3">
+                <div class="img-share text-center">
+                  <img src="images/blog/3.jpg" class="img-fluid"
+                    style="max-width: 100%; height: auto; max-height: 250px; text-align: center;" alt="anh1">
+                </div>
+                <div class="card-information">
+                  <h5 class="card-title1">Công dụng của Yến sào đối với làn da bạn nên biết</h5>
+                  <p>
+                    Nước yến là loại thực phẩm giàu dinh dưỡng, có nhiều công dụng đối với sức khoẻ và sắc đẹp. Tuy
+                    nhiên, có nhiều chị em vẫn thắc mắc liệu uống nước yến có đẹp da không? Hãy cùng HSkincare...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="information container">
+            <div class="row justify-content-center">
+              <div class="information1 col-md-4 mb-3">
+                <div class="img-share">
+                  <img src="images/blog/1.jpg" class="img-fluid"
+                    style="max-width: 100%; height: auto; max-height: 250px; text-align: center;" alt="anh1">
+                </div>
+                <div class="card-information">
+                  <h5 class="card-title1">Cách làm đẹp da bằng tổ yến ít ai biết</h5>
+                  <p>Trong tổ yến có rất giàu chất đạm, đường bột, khoáng vi lượng, chất xơ và 18 loại axit amin khác.
+                    Ngoài các tác dụng tăng cường sức khoẻ, tổ yến còn có tác dụng đặc biệt trong việc chăm sóc da...
+                  </p>
+                </div>
+              </div>
+
+              <div class="information1 col-md-4 mb-3">
+                <div class="img-share">
+                  <img src="images/blog/2.jpg" class="img-fluid"
+                    style="max-width: 100%; height: auto; max-height: 250px; text-align: center;" alt="anh1">
+                </div>
+                <div class="card-information">
+                  <h5 class="card-title1">Mặt nạ Yến sào: Giải pháp làm đẹp, Trẻ hoá làn da</h5>
+                  <p>Bên cạnh công dụng bồi bổ sức khoẻ, Yến sào còn được biết đến là một loại nguyên liệu làm đẹp và
+                    chăm sóc da cho chị em phụ nữ. Sau đây hãy cùng HSkincare khám phá ngay các cách làm đẹp
+                  </p>
+                </div>
+              </div>
+
+              <div class="information1 col-md-4 mb-3">
+                <div class="img-share text-center">
+                  <img src="images/blog/3.jpg" class="img-fluid"
+                    style="max-width: 100%; height: auto; max-height: 250px; text-align: center;" alt="anh1">
+                </div>
+                <div class="card-information">
+                  <h5 class="card-title1">Công dụng của Yến sào đối với làn da bạn nên biết</h5>
+                  <p>
+                    Nước yến là loại thực phẩm giàu dinh dưỡng, có nhiều công dụng đối với sức khoẻ và sắc đẹp. Tuy
+                    nhiên, có nhiều chị em vẫn thắc mắc liệu uống nước yến có đẹp da không? Hãy cùng HSkincare...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-warning">Xem tất cả</button>
+  </div>
+  <div class="footer">
+    <div class="form">
+      
+    </div>
+
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
 
   <script>
-    var currentLanguage = 'vi';
+    document.addEventListener('DOMContentLoaded', function () {
+      // Xác định ngôn ngữ mặc định (ví dụ: tiếng Việt)
+      var defaultLanguage = 'vi';
 
-    function changeLanguage(language) {
-      var viFlag = document.getElementById('viFlag');
-      var enFlag = document.getElementById('enFlag');
+      // Kiểm tra localStorage để xem có ngôn ngữ đã lưu không
+      var savedLanguage = localStorage.getItem('selectedLanguage');
 
-      if (language === 'vi' && currentLanguage !== 'vi') {
-        currentLanguage = 'vi';
-        viFlag.style.display = 'block';
-        enFlag.style.display = 'none';
-        // Thực hiện các thay đổi khác khi chọn tiếng Việt
-      } else if (language === 'en' && currentLanguage !== 'en') {
-        currentLanguage = 'en';
-        viFlag.style.display = 'none';
-        enFlag.style.display = 'block';
-        // Thực hiện các thay đổi khác khi chọn tiếng Anh
+      // Nếu đã lưu, sử dụng ngôn ngữ đã lưu
+      if (savedLanguage) {
+        var languageImage = savedLanguage === 'vi' ? '/images/language/vi.jpg' : '/images/language/en.jpg';
+        updateLanguageImage(languageImage);
+      } else {
+        // Ngược lại, sử dụng ngôn ngữ mặc định
+        updateLanguageImage('/images/language/vi.jpg');
+      }
+    });
+
+    function changeLanguage(lang, imagePath) {
+      // Lưu ngôn ngữ đã chọn vào localStorage
+      localStorage.setItem('selectedLanguage', lang);
+
+      // Đổi ngôn ngữ theo ngôn ngữ đã chọn
+      // Ở đây bạn có thể thực hiện logic để cập nhật giao diện người dùng với ngôn ngữ mới
+      console.log('Ngôn ngữ đã chọn:', lang);
+
+      // Cập nhật hình ảnh ngôn ngữ
+      updateLanguageImage(imagePath);
+    }
+
+    function updateLanguageImage(imagePath) {
+      var languageImagetoggle = document.getElementById('languageImagetoggle');
+      if (languageImagetoggle) {
+        languageImagetoggle.src = imagePath;
+      }
+      var languageImagenavbar = document.getElementById('languageImagenavbar');
+      if (languageImagenavbar) {
+        languageImagenavbar.src = imagePath;
       }
     }
     $(document).ready(function () {

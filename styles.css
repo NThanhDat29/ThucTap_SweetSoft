@@ -1,7 +1,6 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    margin: 0;
 }
 @font-face {
     font-family: 'Cor-Medium';
@@ -368,8 +367,147 @@ span.strikethrough {
 .reviews{
     background-image: url("images/background/1.png");
     background-color: rgb(253, 251, 242);
+    height: 500px;
+
+}
+.titles{
+    padding-top: 20px;
 }
 .comment h5{
     font-family: 'Roboto-ExtraBold';
-    font-size: 30px;
+    font-size: 26px;
+}
+.cmt1{
+    border: 1px solid rgb(198 190 190);
+    margin-left: 70px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: rgb(254, 253, 246);
+}
+.cmt2{
+    border: 1px solid rgb(198 190 190);
+    margin-left: 70px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: rgb(254, 253, 246);
+}
+.card1 {
+    display: flex;
+    align-items: center;
+    width: 300px; /* Thiết lập chiều rộng phù hợp với nhu cầu của bạn */
+    margin: 5px;
+    overflow: hidden;
+    align-items: center;
+    
+  }
+
+.card1-img-top {
+    flex-shrink: 0; /* Không cho phép hình ảnh co lại */
+    width: 90px; /* Thiết lập chiều rộng của hình ảnh */
+    height: 90px; /* Thiết lập chiều cao của hình ảnh */
+    border-radius: 50%; /* Để hình ảnh trở thành hình tròn (tuỳ chọn) */
+    margin-right: 10px; /* Khoảng cách giữa hình ảnh và card1-body */
+  }
+
+  .card1-body {
+    flex: 1; /* Mở rộng phần body để chiếm hết phần còn lại của card1 */
+  }
+
+  .card1-title {
+    margin-bottom: 5px;
+  }
+  .rating {
+    color: #ffc107; /* Màu sắc biểu tượng đánh giá (màu vàng trong Font Awesome) */
+    font-size: 24px; /* Kích thước biểu tượng */
+  }
+
+  .checked {
+    color: #f39c12; /* Màu sắc biểu tượng đã chọn (màu vàng cam) */
+  }
+  #carouselExampleIndicators2 .carousel-indicators {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: last baseline;
+    height: 100%;
+    margin-left: 110px;
+    margin-bottom: -10px;
+}
+
+#carouselExampleIndicators2 .carousel-indicators [data-bs-target] {
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgb(62, 60, 60);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#carouselExampleIndicators2 .carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: yellow;
+    margin-bottom: -30px;
+}
+
+#carouselExampleIndicators2 .carousel-indicators .active {
+    background-color: rgb(209, 209, 59);
+}
+.card-information h5 {
+    margin-bottom: 20px; 
+}
+#carouselExampleIndicators3 .carousel-indicators {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: last baseline;
+    height: 100%;
+    margin-left: 110px;
+    margin-bottom: -10px;
+}
+
+#carouselExampleIndicators3 .carousel-indicators [data-bs-target] {
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgb(62, 60, 60);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#carouselExampleIndicators3 .carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: yellow;
+   
+}
+#carouselExampleIndicators3 .carousel-indicators .active {
+    background-color: rgb(209, 209, 59);
+}
+.share{
+    background-color: rgb(254, 253, 246);
+}
+.share button{
+    margin-top: 10px;
+    margin-left: 65px;
+}
+.news{
+    background-image: url("images/background/1.png");
+    background-color: rgb(252, 250, 244);
+}
+.news button{
+    margin-top: 10px;
+    margin-left: 65px;
 }
