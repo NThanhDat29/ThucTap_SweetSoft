@@ -35,3 +35,5 @@ $('.responsive').slick({
       // instead of a settings object
     ]
   });
+
+

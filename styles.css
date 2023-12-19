@@ -95,7 +95,7 @@ body {
 
 .header-main {
     position: fixed;
-    z-index: 1;
+    z-index: 99;
     top: 0;
     left: 0;
     width: 100%;
@@ -195,10 +195,12 @@ body {
 }
 
 .bgColor1 {
-    background-color: rgb(247, 243, 231);
+    background-color: #fcf8ef;
     text-align: center;
 }
-
+.newproduct{
+    background-color: #fcf8ef;
+}
 span.strikethrough {
     text-decoration: line-through;
     background-color: white;
@@ -235,16 +237,16 @@ span.strikethrough {
 }
 
 .container_products {
-    background-color: cornsilk;
+    background-color: #f3eddd;
 }
 
 .container_products1 {
-    background-color: cornsilk;
+    background-color: #f3eddd;
 }
 
 .img-card {
 
-    background-color: cornsilk;
+    background-color: #fcf8ef;
 }
 
 .text-layer {
@@ -298,11 +300,11 @@ span.strikethrough {
     /* Điều chỉnh vị trí hiển thị ảnh, có thể là 'center', 'top', 'bottom', 'left', 'right', hoặc giá trị khác */
     height: 100px;
     /* Đặt chiều cao của phần space, giống với chiều cao đã đặt inline trong HTML */
-    background-color: white;
+    background-color:#fcf8ef;
 }
 
 .promotions {
-    background-color: cornsilk;
+    background-color: #f3eddd;
 }
 
 .container-time {
@@ -366,7 +368,7 @@ span.strikethrough {
 }
 .reviews{
     background-image: url("images/background/1.png");
-    background-color: rgb(253, 251, 242);
+    background-color: #fcf8ef;
     height: 500px;
 
 }
@@ -389,7 +391,7 @@ span.strikethrough {
     width: 600px;
     height: 300px;
     border-radius: 10px;
-    background-color: rgb(254, 253, 246);
+    background-color: #f3eddd;
 }
 .cmt2{
     border: 1px solid rgb(198 190 190);
@@ -403,7 +405,7 @@ span.strikethrough {
     width: 600px;
     height: 300px;
     border-radius: 10px;
-    background-color: rgb(254, 253, 246);
+    background-color: #f3eddd;
 }
 .card1 {
     display: flex;
@@ -497,17 +499,17 @@ span.strikethrough {
     background-color: rgb(209, 209, 59);
 }
 .share{
-    background-color: rgb(254, 253, 246);
+    background-color: #f3eddd;
 }
 .share button{
-    margin-top: 10px;
+    margin-bottom: 20px;
     margin-left: 65px;
 }
 .news{
     background-image: url("images/background/1.png");
-    background-color: rgb(252, 250, 244);
+    background-color: #fcf8ef;
 }
 .news button{
-    margin-top: 10px;
+    margin-bottom: 20px;
     margin-left: 65px;
 }

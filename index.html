@@ -21,90 +21,130 @@
 </head>
 
 <body>
-  <div class="header-main">
-    <div class="header-wrapper">
-      <nav class="navbar navbar-expand-lg header-main">
-        <div class="container-fluid header-wrapper">
-          <div class="d-flex justify-content-between align-items-center w-100">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar"
-              aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand d-lg-none" href="#">
-              <img src="images/logo/logo.png" alt="Beauty Shop Logo">
+  <nav id="menu" class="navbar navbar-expand-lg header-main">
+    <div class="container-fluid header-wrapper">
+      <div class="d-flex justify-content-between align-items-center w-100">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar"
+          aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand d-lg-none" href="#">
+          <img src="/images/logo/logo.png" alt="Beauty Shop Logo">
+        </a>
+        <div class="navbar-brand d-lg-none d-flex align-items-center">
+          <div class="nav-item">
+            <a class="nav-link" href="">
+              <i class="fa-solid fa-cart-shopping"></i>
             </a>
-            <div class="navbar-brand d-lg-none d-flex align-items-center">
-              <div class="nav-item">
-                <a class="nav-link" href="">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </a>
-              </div>
-              <div class="nav-item dropdown">
-                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  <img id="languageImagenavbar" src="images/language/vi.jpg" alt="Vietnam">
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li class="nav-item language-icon" id="viFlag">
-                    <a class="nav-link" href="#" onclick="changeLanguage('vi', '/images/language/vi.jpg');">
-                      <img src="images/language/vi.jpg" alt="Vietnam">
-                    </a>
-                  </li>
-                  <li class="nav-item language-icon" id="enFlag">
-                    <a class="nav-link" href="#" onclick="changeLanguage('en', '/images/language/en.jpg');">
-                      <img src="images/language/en.jpg" alt="English">
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
           </div>
-
-          <div class="collapse navbar-collapse main-nav" id="myNavbar">
-            <ul class="navbar-nav d-flex align-items-center navbar-right">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">
-                  <i class="fa-solid fa-house"></i>
+          <div class="nav-item dropdown">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <img id="languageImagenavbar" src="/images/language/vi.jpg" alt="Vietnam">
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li class="nav-item language-icon" id="viFlag">
+                <a class="nav-link" href="#" onclick="changeLanguage('vi', '/images/language/vi.jpg');">
+                  <img src="/images/language/vi.jpg" alt="Vietnam">
                 </a>
               </li>
-              <li class="nav-item"><a class="nav-link" href="#">Sản phẩm</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Giới thiệu</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Khuyến mãi</a></li>
-              <li class="nav-item d-none d-lg-block">
-                <img src="images/logo/logo.png" alt="Beauty Shop Logo">
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#">Tin tức</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Đại lý</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="">
-                  <i class="fa-solid fa-cart-shopping"></i>
+              <li class="nav-item language-icon" id="enFlag">
+                <a class="nav-link" href="#" onclick="changeLanguage('en', '/images/language/en.jpg');">
+                  <img src="/images/language/en.jpg" alt="English">
                 </a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  <img id="languageImagetoggle" src="images/language/vi.jpg" alt="Vietnam">
-                </a>
-                <ul class="dropdown-menu">
-                  <li class="nav-item language-icon" id="viFlag">
-                    <a class="nav-link" href="#" onclick="changeLanguage('vi', 'images/language/vi.jpg');">
-                      <img src="images/language/vi.jpg" alt="Vietnam">
-                    </a>
-                  </li>
-                  <li class="nav-item language-icon" id="enFlag">
-                    <a class="nav-link" href="#" onclick="changeLanguage('en', 'images/language/en.jpg');">
-                      <img src="images/language/en.jpg" alt="English">
-                    </a>
-                  </li>
-                </ul>
+            </ul>
           </div>
         </div>
-    </div>
-    </nav>
+      </div>
 
-  </div>
-  </div>
+      <div class="collapse navbar-collapse main-nav" id="myNavbar">
+        <ul class="navbar-nav d-flex align-items-center navbar-right">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="fa-solid fa-house"></i>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Sản phẩm
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+              <li><a href="#">Page 1-1</a></li>
+              <li><a href="#">Page 1-2</a></li>
+              <li><a href="#">Page 1-3</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Giới thiệu</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Khuyến mãi
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="salesDropdown">
+              <li><a href="#">Page 1-1</a></li>
+              <li><a href="#">Page 1-2</a></li>
+              <li><a href="#">Page 1-3</a></li>
+            </ul>
+          </li>
+          <li class="nav-item d-none d-lg-block">
+            <img src="/images/logo/logo.png" alt="Beauty Shop Logo">
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Tin tức
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="newsDropdown">
+              <li><a href="#">Page 1-1</a></li>
+              <li><a href="#">Page 1-2</a></li>
+              <li><a href="#">Page 1-3</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Đại lý
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="agencyDropdown">
+              <li><a href="#">Page 1-1</a></li>
+              <li><a href="#">Page 1-2</a></li>
+              <li><a href="#">Page 1-3</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <img id="languageImagetoggle" src="images/language/vi.jpg" alt="Vietnam">
+            </a>
+            <ul class="dropdown-menu">
+              <li class="nav-item language-icon" id="viFlag">
+                <a class="nav-link" href="#" onclick="changeLanguage('vi', 'images/language/vi.jpg');">
+                  <img src="images/language/vi.jpg" alt="Vietnam">
+                </a>
+              </li>
+              <li class="nav-item language-icon" id="enFlag">
+                <a class="nav-link" href="#" onclick="changeLanguage('en', 'images/language/en.jpg');">
+                  <img src="images/language/en.jpg" alt="English">
+                </a>
+              </li>
+            </ul>
+      </div>
+    </div>
+    </div>
+  </nav>
 
   <!-- Nội dung trang web ở đây -->
   <main class="position-relative">
@@ -191,7 +231,7 @@
         </div>
       </div>
     </div>
-    <div class="row align-items-start">
+    <div class="newproduct row align-items-start" >
       <div class="position-relative">
         <div class="row">
           <div class="col-6">
@@ -1112,7 +1152,7 @@
   </div>
   <div class="footer">
     <div class="form">
-      
+
     </div>
 
   </div>
