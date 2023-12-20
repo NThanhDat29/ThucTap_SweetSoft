@@ -42,11 +42,11 @@ $('.responsive').slick({
 
     // Nếu đã lưu, sử dụng ngôn ngữ đã lưu
     if (savedLanguage) {
-      var languageImage = savedLanguage === 'vi' ? '/images/language/vi.jpg' : '/images/language/en.jpg';
+      var languageImage = savedLanguage === 'vi' ? 'images/language/vi.jpg' : 'images/language/en.jpg';
       updateLanguageImage(languageImage);
     } else {
       // Ngược lại, sử dụng ngôn ngữ mặc định
-      updateLanguageImage('/images/language/vi.jpg');
+      updateLanguageImage('images/language/vi.jpg');
     }
   });
 
