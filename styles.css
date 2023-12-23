@@ -1,59 +1,72 @@
-
 body {
     font-family: 'Arial', sans-serif;
 }
+
 @font-face {
     font-family: 'Cor-Medium';
     src: url("fonts/CormorantGaramond-Medium.ttf");
 }
+
 @font-face {
     font-family: 'Cor-MediumItalic';
     src: url("fonts/CormorantGaramond-MediumItalic.ttf");
 }
+
 @font-face {
     font-family: 'lg-eot';
     src: url("fonts/lg.eot");
 }
+
 @font-face {
     font-family: 'lg-ttf';
     src: url("fonts/lg.ttf");
 }
+
 @font-face {
     font-family: 'lg-woff';
     src: url("fonts/lg.woff");
 }
+
 @font-face {
     font-family: 'Quicksand-Bold';
     src: url("fonts/Quicksand-Bold.ttf");
 }
+
 @font-face {
     font-family: 'Quicksand-Medium';
     src: url("fonts/Quicksand-Medium.ttf");
 }
+
 @font-face {
     font-family: 'Quicksand-Regular';
     src: url("fonts/Quicksand-Regular.ttf");
 }
+
 @font-face {
     font-family: 'Quicksand-SemiBold';
     src: url("fonts/Quicksand-SemiBold.ttf");
 }
+
 @font-face {
     font-family: 'Roboto-ExtraBold';
     src: url("fonts/RobotoSlab-ExtraBold.ttf");
 }
+
 @font-face {
     font-family: 'vjs-eot';
     src: url("fonts/vjs.eot");
 }
+
 @font-face {
     font-family: 'vjs-ttf';
     src: url("fonts/vjs.ttf");
 }
+
 @font-face {
     font-family: 'vjs-woff';
     src: url("fonts/vjs.woff");
 }
+
 .text1 {
     font-family: 'Cor-MediumItalic';
 }
@@ -101,39 +114,47 @@ body {
     width: 100%;
     padding: 20px 0;
 }
+
 .header-wrapper {
 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .logo-container img {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
     /* Giảm khoảng cách dưới logo */
 }
+
 .main-nav {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
 .main-nav .nav-link {
     color: white;
 }
+
 .nav-item {
     margin-right: 15px;
 }
+
 .language-icon img {
     width: 25px;
     /* Giảm kích thước biểu tượng ngôn ngữ */
     height: auto;
 }
+
 .carousel-caption {
     position: absolute;
     height: 56%;
 }
+
 .carousel-indicators {
     display: flex;
     flex-direction: column;
@@ -142,12 +163,14 @@ body {
     height: 100%;
     margin-right: 50px;
 }
+
 .carousel-indicators [data-bs-target] {
     width: 15px;
     height: 15px;
     border: 2px solid white;
     background-color: rgba(255, 255, 255, 0);
 }
+
 .carousel-indicators button {
     width: 12px;
     height: 12px;
@@ -155,6 +178,7 @@ body {
     background-color: rgba(255, 255, 255, 0);
     margin-bottom: 10px;
 }
+
 .carousel-indicators .active {
     background-color: white;
 }
@@ -185,12 +209,14 @@ body {
     background-color: #fcf8ef;
     text-align: center;
 }
-.newproduct{
+
+.newproduct {
     background-color: #fcf8ef;
 }
+
 span.strikethrough {
     text-decoration: line-through;
-    background-color: white;
+    
     color: #757070;
     border-radius: 3px;
     padding: 2px 4px;
@@ -229,7 +255,7 @@ span.strikethrough {
 
 
 .img-card {
-    
+
     background-color: #fcf8ef;
 }
 
@@ -241,6 +267,7 @@ span.strikethrough {
     font-size: 24px;
     color: white;
 }
+
 .favorite_products {
     background-color: #f3eddd;
 }
@@ -289,16 +316,18 @@ span.strikethrough {
     /* Điều chỉnh vị trí hiển thị ảnh, có thể là 'center', 'top', 'bottom', 'left', 'right', hoặc giá trị khác */
     height: 100px;
     /* Đặt chiều cao của phần space, giống với chiều cao đã đặt inline trong HTML */
-    background-color:#fcf8ef;
+    background-color: #fcf8ef;
 }
 
 .promotions {
     background-color: #f3eddd;
 }
-.promotion-information{
+
+.promotion-information {
     height: 500px;
     position: relative;
 }
+
 .promotion-time {
     text-align: center;
 }
@@ -336,7 +365,7 @@ span.strikethrough {
     height: 245px;
     left: 225px;
     top: -15px;
-    
+
 }
 
 .khung-duoi {
@@ -347,16 +376,19 @@ span.strikethrough {
     bottom: -60px;
 
 }
+
 .img-pr {
     margin: -35px 0 1rem;
 }
+
 .promotion-product {
     display: flex;
-    flex-wrap: wrap; /* Đảm bảo các div con xuống dòng khi không đủ không gian */
+    flex-wrap: wrap;
+    /* Đảm bảo các div con xuống dòng khi không đủ không gian */
     padding-top: 50px;
-  }
-  
-  .pr-product1 {
+}
+
+.pr-product1 {
     display: flex;
     align-items: center;
     width: 330px;
@@ -365,12 +397,12 @@ span.strikethrough {
     margin-left: auto;
     margin-right: auto;
     background-color: #ffffff;
-  }
-  
-  .pr-product1-img {
+}
+
+.pr-product1-img {
     flex-shrink: 0;
     height: 120px;
-   
+
     margin-right: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -379,31 +411,34 @@ span.strikethrough {
     padding-right: 10px;
     background-color: #f5f0da;
     border-radius: 5px;
-  }
-  
-  .pr-product1-body {
+}
+
+.pr-product1-body {
     flex: 1;
-  }
-  
+}
+
 .card1-title {
     margin-bottom: 5px;
-  }
-  
-  
-.reviews{
+}
+
+
+.reviews {
     background-image: url("images/background/1.png");
     background-color: #fcf8ef;
     height: 500px;
 
 }
-.review-title{
+
+.review-title {
     padding-top: 20px;
 }
-.comment h5{
+
+.comment h5 {
     font-family: 'Roboto-ExtraBold';
     font-size: 26px;
 }
-.cmt{
+
+.cmt {
     border: 1px solid rgb(198 190 190);
     margin-left: 70px;
     margin-right: 10px;
@@ -424,9 +459,8 @@ span.strikethrough {
     width: 300px; /* Thiết lập chiều rộng phù hợp với nhu cầu của bạn */
     margin: 5px;
     overflow: hidden;
-    align-items: center;
-    
-  }
+
+}
 
 .card1-img-top {
     flex-shrink: 0; /* Không cho phép hình ảnh co lại */
@@ -434,24 +468,30 @@ span.strikethrough {
     height: 90px; /* Thiết lập chiều cao của hình ảnh */
     border-radius: 50%; /* Để hình ảnh trở thành hình tròn (tuỳ chọn) */
     margin-right: 10px; /* Khoảng cách giữa hình ảnh và card1-body */
-  }
+}
 
-  .card1-body {
-    flex: 1; /* Mở rộng phần body để chiếm hết phần còn lại của card1 */
-  }
+.card1-body {
+    flex: 1;
+    /* Mở rộng phần body để chiếm hết phần còn lại của card1 */
+}
 
-  .card1-title {
+.card1-title {
     margin-bottom: 5px;
-  }
-  .rating {
-    color: #ffc107; /* Màu sắc biểu tượng đánh giá (màu vàng trong Font Awesome) */
-    font-size: 24px; /* Kích thước biểu tượng */
-  }
+}
 
-  .checked {
-    color: #f39c12; /* Màu sắc biểu tượng đã chọn (màu vàng cam) */
-  }
-  #carouselExampleIndicators2 .carousel-indicators {
+.rating {
+    color: #ffc107;
+    /* Màu sắc biểu tượng đánh giá (màu vàng trong Font Awesome) */
+    font-size: 24px;
+    /* Kích thước biểu tượng */
+}
+
+.checked {
+    color: #f39c12;
+    /* Màu sắc biểu tượng đã chọn (màu vàng cam) */
+}
+
+#carouselExampleIndicators2 .carousel-indicators {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -479,9 +519,11 @@ span.strikethrough {
 #carouselExampleIndicators2 .carousel-indicators .active {
     background-color: rgb(209, 209, 59);
 }
-.card-information h5 {
-    margin-bottom: 20px; 
+
+.card-information .h5 {
+    margin-bottom: 20px;
 }
+
 #carouselExampleIndicators3 .carousel-indicators {
     display: flex;
     flex-direction: row;
@@ -504,11 +546,13 @@ span.strikethrough {
     height: 12px;
     border-radius: 100%;
     background-color: yellow;
-   
+
 }
+
 #carouselExampleIndicators3 .carousel-indicators .active {
     background-color: rgb(209, 209, 59);
 }
+
 #carouselExampleIndicators4 .carousel-indicators {
     display: flex;
     flex-direction: row;
@@ -537,6 +581,7 @@ span.strikethrough {
 #carouselExampleIndicators4 .carousel-indicators .active {
     background-color: rgb(209, 209, 59);
 }
+
 #carouselExampleIndicators5 .carousel-indicators {
     display: flex;
     flex-direction: row;
@@ -559,26 +604,57 @@ span.strikethrough {
     height: 12px;
     border-radius: 100%;
     background-color: yellow;
-   
+
 }
+
 #carouselExampleIndicators5 .carousel-indicators .active {
     background-color: rgb(209, 209, 59);
 }
+
 .card-information h5 {
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
-.share{
+
+.share {
     background-color: #f3eddd;
 }
-.share button{
+
+.share button {
     margin-bottom: 20px;
     margin-left: 65px;
 }
-.news{
+
+.news {
     background-image: url("images/background/1.png");
     background-color: #fcf8ef;
 }
-.news button{
+
+.news button {
     margin-bottom: 20px;
     margin-left: 65px;
 }
+.footer{
+    
+    background-color: #f3eddd;
+}
+.form-title{
+    padding-top: 15px;
+}
+.btn-input{
+    height: 35px;
+    width: 180px;
+    border-radius: 30px;
+    background-color: #efc65a;
+    color: #4d4837;
+}
+.btn{
+    border-radius: 30px;
+    background-color: #efc65a;
+    color: #4d4837;
+}
+.form-control{
+    border-radius: 30px;
+    border-color: #f1deac;
+    color: #d7d7d7;
+}
+
