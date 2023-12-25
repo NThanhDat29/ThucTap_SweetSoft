@@ -85,5 +85,16 @@ $('.responsive').slick({
       nextArrow: '<button type="button" class="slick-next">&#8594;</button>'  // Nút điều hướng tiến
     });
   });
+// Lắng nghe sự kiện cuộn trang
+window.addEventListener('scroll', function() {
+  var menu = document.getElementById('menu');
 
+  // Nếu vị trí cuộn lớn hơn 50px, hiển thị menu
+  if (window.scrollY > 50) {
+      menu.style.top = '0';
+  } else {
+      // Ngược lại, ẩn menu
+      menu.style.top = '0px';
+  }
+});
 

@@ -67,8 +67,27 @@ body {
     src: url("fonts/vjs.woff");
 }
 
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    z-index: 1000;
+    /* Để đảm bảo menu hiển thị trước các phần tử khác */
+}
+
+.t1 {
+    font-family: 'Roboto-ExtraBold';
+    font-size: 36px;
+}
+
 .text1 {
     font-family: 'Cor-MediumItalic';
+    font-size: 50px;
 }
 
 .text2 {
@@ -152,7 +171,11 @@ body {
 
 .carousel-caption {
     position: absolute;
-    height: 56%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .carousel-indicators {
@@ -165,8 +188,8 @@ body {
 }
 
 .carousel-indicators [data-bs-target] {
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     border: 2px solid white;
     background-color: rgba(255, 255, 255, 0);
 }
@@ -196,6 +219,7 @@ body {
     /* Màu và độ dày đường gạch dọc */
     padding-right: 20px;
 
+
     /* Khoảng cách giữa đường gạch và nội dung */
 }
 
@@ -216,7 +240,7 @@ body {
 
 span.strikethrough {
     text-decoration: line-through;
-    
+
     color: #757070;
     border-radius: 3px;
     padding: 2px 4px;
@@ -289,10 +313,12 @@ span.strikethrough {
 }
 
 #carouselExampleIndicators1 .carousel-indicators [data-bs-target] {
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     border: 1px solid rgb(62, 60, 60);
     background-color: rgba(255, 255, 255, 0);
+    margin-right: 5px;
+    margin-left: 4px;
 }
 
 #carouselExampleIndicators1 .carousel-indicators button {
@@ -391,12 +417,13 @@ span.strikethrough {
 .pr-product1 {
     display: flex;
     align-items: center;
-    width: 330px;
+    width: 390px;
     margin: 70px;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
     background-color: #ffffff;
+
 }
 
 .pr-product1-img {
@@ -456,18 +483,25 @@ span.strikethrough {
 .card1 {
     display: flex;
     align-items: center;
-    width: 300px; /* Thiết lập chiều rộng phù hợp với nhu cầu của bạn */
+    width: 300px;
+    /* Thiết lập chiều rộng phù hợp với nhu cầu của bạn */
     margin: 5px;
+    margin-left: 70px;
     overflow: hidden;
 
 }
 
 .card1-img-top {
-    flex-shrink: 0; /* Không cho phép hình ảnh co lại */
-    width: 90px; /* Thiết lập chiều rộng của hình ảnh */
-    height: 90px; /* Thiết lập chiều cao của hình ảnh */
-    border-radius: 50%; /* Để hình ảnh trở thành hình tròn (tuỳ chọn) */
-    margin-right: 10px; /* Khoảng cách giữa hình ảnh và card1-body */
+    flex-shrink: 0;
+    /* Không cho phép hình ảnh co lại */
+    width: 90px;
+    /* Thiết lập chiều rộng của hình ảnh */
+    height: 90px;
+    /* Thiết lập chiều cao của hình ảnh */
+    border-radius: 50%;
+    /* Để hình ảnh trở thành hình tròn (tuỳ chọn) */
+    margin-right: 10px;
+    /* Khoảng cách giữa hình ảnh và card1-body */
 }
 
 .card1-body {
@@ -502,10 +536,12 @@ span.strikethrough {
 }
 
 #carouselExampleIndicators2 .carousel-indicators [data-bs-target] {
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     border: 1px solid rgb(62, 60, 60);
     background-color: rgba(255, 255, 255, 0);
+    margin-right: 5px;
+    margin-left: 4px;
 }
 
 #carouselExampleIndicators2 .carousel-indicators button {
@@ -535,10 +571,12 @@ span.strikethrough {
 }
 
 #carouselExampleIndicators3 .carousel-indicators [data-bs-target] {
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     border: 1px solid rgb(62, 60, 60);
     background-color: rgba(255, 255, 255, 0);
+    margin-right: 5px;
+    margin-left: 4px;
 }
 
 #carouselExampleIndicators3 .carousel-indicators button {
@@ -564,8 +602,8 @@ span.strikethrough {
 }
 
 #carouselExampleIndicators4 .carousel-indicators [data-bs-target] {
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     border: 1px solid rgb(62, 60, 60);
     background-color: rgba(255, 255, 255, 0);
 }
@@ -576,6 +614,8 @@ span.strikethrough {
     border-radius: 100%;
     background-color: yellow;
     margin-bottom: 40px;
+    margin-right: 5px;
+    margin-left: 4px;
 }
 
 #carouselExampleIndicators4 .carousel-indicators .active {
@@ -593,10 +633,12 @@ span.strikethrough {
 }
 
 #carouselExampleIndicators5 .carousel-indicators [data-bs-target] {
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     border: 1px solid rgb(62, 60, 60);
     background-color: rgba(255, 255, 255, 0);
+    margin-right: 5px;
+    margin-left: 4px;
 }
 
 #carouselExampleIndicators5 .carousel-indicators button {
@@ -633,28 +675,39 @@ span.strikethrough {
     margin-bottom: 20px;
     margin-left: 65px;
 }
-.footer{
-    
+
+.footer {
+
     background-color: #f3eddd;
 }
-.form-title{
+
+.form-title {
     padding-top: 15px;
 }
-.btn-input{
+
+.btn-input {
     height: 35px;
     width: 180px;
     border-radius: 30px;
     background-color: #efc65a;
     color: #4d4837;
 }
-.btn{
+
+.btn {
     border-radius: 30px;
     background-color: #efc65a;
     color: #4d4837;
 }
-.form-control{
+
+.form-control {
     border-radius: 30px;
     border-color: #f1deac;
     color: #d7d7d7;
 }
 
+hr {
+    width: 80%;
+    /* Bạn có thể thay đổi giá trị theo ý muốn */
+    margin: 10px auto;
+    /* Đưa đường kẽ ngang vào giữa trang */
+}
