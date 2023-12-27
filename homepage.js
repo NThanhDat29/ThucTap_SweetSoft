@@ -75,26 +75,38 @@ $('.responsive').slick({
   //slick slider
   $(document).ready(function () {
     $('.slick-slider').slick({
-      infinite: true,  // Cho phép cuộn vô hạn
-      arrows: true,
-      autoplay: true,
-      autoSpeed: 2000,
-      slidesToShow: 4,  // Số lượng hiển thị sản phẩm trên mỗi slide
-      slidesToScroll: 4,  // Số lượng sản phẩm cuộn mỗi lần
-      prevArrow: '<button type="button" class="slick-prev">&#8592;</button>',  // Nút điều hướng trở lại
-      nextArrow: '<button type="button" class="slick-next">&#8594;</button>'  // Nút điều hướng tiến
+        infinite: true,
+        arrows: true,
+        autoplay: true,
+        autoSpeed: 2000,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        prevArrow: '<button type="button" class="slick-prev">&#8592;</button>',
+        nextArrow: '<button type="button" class="slick-next">&#8594;</button>',
+        dots: false,  // Tắt hiển thị dots mặc định
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true  // Bật hiển thị dots khi ở chế độ mobile
+                }
+            }
+        ]
     });
-  });
+});
 // Lắng nghe sự kiện cuộn trang
 window.addEventListener('scroll', function() {
   var menu = document.getElementById('menu');
 
-  // Nếu vị trí cuộn lớn hơn 50px, hiển thị menu
+  // Nếu vị trí cuộn lớn hơn 50px, thêm class và hiển thị background
   if (window.scrollY > 50) {
-      menu.style.top = '0';
+      $('body').addClass("fixedmenu");
   } else {
-      // Ngược lại, ẩn menu
-      menu.style.top = '0px';
+      // Ngược lại, xóa class và ẩn background
+      $('body').removeClass("fixedmenu");
+      menu.style.boxShadow = 'none';
   }
 });
 

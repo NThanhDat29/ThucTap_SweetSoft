@@ -61,7 +61,7 @@
       </div>
 
       <div class="collapse navbar-collapse main-nav" id="myNavbar">
-        <ul class="navbar-nav d-flex align-items-center navbar-right">
+        <ul class="navbar-nav d-flex align-items-center navbar-left">
           <li class="nav-item">
             <a class="nav-link" href="index.html">
               <i class="fa-solid fa-house"></i>
@@ -206,29 +206,29 @@
     </div>
     <div class="introduce position-relative">
       <div class="container position-relative">
-        <div class="row justify-content-center">
-          <div class="col col-divider">
+        <div class="row justify-content-between text-center"> <!-- Sử dụng justify-content-between và text-center -->
+          <div class="col-6 col-md col-divider mb-3">
             <div class="utilities d-flex-column-center">
               <img src="images/Icons-svg/utilities/1.svg" class="d-block w-50 img-fluid" alt="anh1">
               <b>Thành Phần Tự Nhiên</b>
               <p>Sản phẩm dưỡng da tinh chất từ yến đầu tiên ở Việt Nam</p>
             </div>
           </div>
-          <div class="col col-divider">
+          <div class="col-6 col-md col-divider mb-3">
             <div class="utilities d-flex-column-center">
               <img src="images/Icons-svg/utilities/2.svg" class="d-block w-50 img-fluid" alt="anh2">
               <b>Độ PH Trung Tính</b>
               <p>Sản phẩm dưỡng da tinh chất từ yến đầu tiên ở Việt Nam</p>
             </div>
           </div>
-          <div class="col col-divider">
+          <div class="col-6 col-md col-divider mb-3">
             <div class="utilities d-flex-column-center">
               <img src="images/Icons-svg/utilities/3.svg" class="d-block w-50 img-fluid" alt="anh3">
               <b>Bảo Vệ Môi Trường</b>
               <p>Sản phẩm dưỡng da tinh chất từ yến đầu tiên ở Việt Nam</p>
             </div>
           </div>
-          <div class="col">
+          <div class="col-6 col-md mb-3">
             <div class="utilities d-flex-column-center">
               <img src="images/Icons-svg/utilities/4.svg" class="d-block w-50 img-fluid" alt="anh4">
               <b>Không Chứa Parapen</b>
@@ -238,29 +238,30 @@
         </div>
       </div>
     </div>
-    <div class="newproduct row align-items-start">
+    <div class="newproduct row align-items-start" style="max-width: 100%;">
       <div class="position-relative">
         <div class="row">
-          <div class="col-6">
+          <div class="col-md-6">
             <figure class="mb-0 text-end">
-              <img src="images/background/about-1.png" class=" top-50 start-15  w-35 h-75" alt="Background Image 2">
+              <img src="images/background/about-1.png" class="img-fluid small-image" alt="Background Image 2">
             </figure>
           </div>
-          <div class="col-6 top-50 start-50 w-50 d-flex align-items-center">
-            <div class="col text-black">
-              <div class="row">
-                <div class="col">
-                  <h1 class="text1" style="font-size: 36px;">Sản Phẩm Mới</h1>
-                  <h2 class="text2" style="font-size: 28px;">Serum Dưỡng Da Tinh Chất Yến Sào Đầu Tiên Ở Việt Nam</h2>
-                  <p style="font-size: 16px;">Với thành phần độc đáo của yến sào, serum không chỉ dưỡng ẩm sâu mà còn
-                    kích
-                    thích sản sinh collagen, giảm nếp nhăn.</p>
-                  <p style="font-size: 16px;">Trải nghiệm sự trẻ trung và khám phá làn da mới với sự hỗ trợ toàn diện từ
-                    serum chăm sóc da hàng ngày.</p>
-                  <button type="button" class="btn btn-warning">Đặt hàng ngay</button>
-                  <button type="button" class="btn btn-outline-dark" style="background-color:#fcf8ef;">Thêm vào giỏ
-                    hàng</button>
-                </div>
+          <div class="col-md-6 d-md-flex align-items-center">
+            <div class="col container text-black" style="max-width: 80%;">
+              <h1 class="text1 " style="font-size: 36px; margin-bottom: 20px;">Sản Phẩm Mới</h1>
+              <h2 class="text2 " style="font-size: 28px; margin-bottom: 20px;">Serum Dưỡng Da Tinh Chất Yến Sào Đầu Tiên
+                Ở Việt Nam</h2>
+              <p class="" style="font-size: 16px;margin-bottom: 5px;">Với thành phần độc đáo của yến sào, serum không
+                chỉ dưỡng ẩm sâu
+                mà còn
+                kích thích sản sinh collagen, giảm nếp nhăn.</p>
+              <p class="" style="font-size: 16px;">Trải nghiệm sự trẻ trung và khám phá làn da mới với sự hỗ trợ
+                toàn diện từ
+                serum chăm sóc da hàng ngày.</p>
+              <div class="d-flex flex-column flex-md-row align-items-start">
+                <button type="button" class="btn btn-warning mb-2 mb-md-0 me-md-2">Đặt hàng ngay</button>
+                <button type="button" class="btn btn-outline-dark mb-2 mb-md-0" style="background-color:#fcf8ef;">Thêm
+                  vào giỏ hàng</button>
               </div>
             </div>
           </div>
@@ -268,7 +269,7 @@
       </div>
     </div>
   </main>
-  <div class="products">
+  <div class="products section1">
     <div class="text-player">
       <h1 class="text3 text-center">Bộ sưu tập
         <img src="images/Icons-svg/lá cây/leaf.svg" alt="la">
@@ -276,142 +277,155 @@
       <p class="text4 text-center">VẺ ĐẸP TINH TẾ</p>
     </div>
     <div class="slick-slider container justify-content-center">
-      <div class="card" style="width: 300px; height: auto;">
+      <div class="card" style="width: 300px; height: 400px">
         <div class="img-card text-center">
           <img src="images/product/1.png" class="w-25 img-fluid" style="height: 250px; text-align: center;" alt="anh1">
         </div>
         <div class="card-body">
-          <h5 class="card-title">Sữa rửa mặt HSkin Care (750ml)</h5>
-          <div style="display: flex; justify-content: space-between; align-items: center;">
+          <h6 class="card-title">Sữa rửa mặt HSkin Care (750ml)</h6>
+          <div style="display: flex; align-items: center;">
             <p style="text-align: justify; font-size: 16px; line-height: 1.5; margin: 0;">
-              <span class="strikethrough">900.000đ</span> 700.000đ
+              <span class="strikethrough">900.000đ</span> <b>700.000đ</b>
             </p>
-            <div style="border: 1px solid red; font-size: 12px; margin: 0;">
+            <div style="border: 1px solid red; font-size: 12px; margin: 0 0 0 10px; border-radius: 3px;">
               <span style="color: red; font-weight: bold;">Bán chạy</span>
             </div>
           </div>
           <hr style="width: 100%;">
           <button type="button" class="btn btn-warning" style="width: 80%;">Đặt hàng</button>
-          <a>
+          <a style="margin-left: 20px;">
             <i class="fa-solid fa-cart-shopping"></i>
           </a>
         </div>
       </div>
-      <div class="card" style="width: 300px;height:auto;">
+      <div class="card" style="width: 300px;height:400px">
         <div class="img-card text-center">
           <img src="images/product/2.png" class="w-25 img-fluid" style=" height: 250px; text-align: center;" alt="anh2">
         </div>
         <div class="card-body">
-          <h5 class="card-title">Sữa rửa mặt HSkin Care (750ml)</h5>
-          <p style="text-align: justify; font-size: 16px; line-height: 1.5;"> <span
-              class="strikethrough">900.000đ</span>700.000đ</p>
+          <h6 class="card-title">Kem tẩy tế bảo chết (900ml)</h6>
+          <p style="text-align: justify; font-size: 16px; line-height: 1.5; margin: 0;">
+            <span class="strikethrough">900.000đ</span> <b>700.000đ</b>
+          </p>
 
           <hr style="width: 100%;">
           <button type="button" class="btn btn-warning" style="width: 80%;">Đặt hàng</button>
-          <a>
+          <a style="margin-left: 20px;">
             <i class="fa-solid fa-cart-shopping"></i>
           </a>
         </div>
       </div>
-      <div class="card" style="width: 300px;height:auto;">
+      <div class="card" style="width: 300px;height:400px">
         <div class="img-card text-center">
           <img src="images/product/3.png" class="w-25 img-fluid" style=" height: 250px; text-align: center;" alt="anh3">
         </div>
         <div class="card-body">
-          <h5 class="card-title">Sữa rửa mặt HSkin Care (750ml)</h5>
-          <p style="text-align: justify; font-size: 16px; line-height: 1.5;"> <span
-              class="strikethrough">900.000đ</span>700.000đ</p>
+          <h6 class="card-title">Kem dưỡng mắt</h6>
+          <p style="text-align: justify; font-size: 16px; line-height: 1.5; margin: 0;">
+            <span class="strikethrough">900.000đ</span> <b>700.000đ</b>
+          </p>
+
           <hr style="width: 100%;">
           <button type="button" class="btn btn-warning" style="width: 80%;">Đặt hàng</button>
-          <a>
+          <a style="margin-left: 20px;">
             <i class="fa-solid fa-cart-shopping"></i>
           </a>
         </div>
       </div>
-      <div class="card" style="width: 300px;height:auto;">
+      <div class="card" style="width: 300px;height:400px">
         <div class="img-card text-center">
           <img src="images/product/4.png" class="w-25 img-fluid" style=" height: 250px; text-align: center;" alt="anh3">
         </div>
         <div class="card-body">
-          <h5 class="card-title">Sữa rửa mặt HSkin Care (750ml)</h5>
-          <p style="text-align: justify; font-size: 16px; line-height: 1.5;"> <span
-              class="strikethrough">900.000đ</span>700.000đ</p>
+          <h6 class="card-title">Kem dưỡng chống lão hoá</h6>
+          <p style="text-align: justify; font-size: 16px; line-height: 1.5; margin: 0;">
+            <span class="strikethrough">900.000đ</span> <b>700.000đ</b>
+          </p>
+
           <hr style="width: 100%;">
           <button type="button" class="btn btn-warning" style="width: 80%;">Đặt hàng</button>
-          <a>
+          <a style="margin-left: 20px;">
             <i class="fa-solid fa-cart-shopping"></i>
           </a>
         </div>
       </div>
-      <div class="card" style="width: 300px;height:auto;">
+      <div class="card" style="width: 300px;height:400px">
         <div class="img-card text-center">
-          <img src="images/product/5.png" class="w-25 img-fluid" style=" height: 250px; text-align: center;" alt="anh5">
+          <img src="images/product/5.png" class="w-25 img-fluid" style=" height: 250px; text-align: center;" alt="anh6">
         </div>
         <div class="card-body">
-          <h5 class="card-title">Sữa rửa mặt HSkin Care (750ml)</h5>
-          <div style="display: flex; justify-content: space-between; align-items: center;">
+          <h6 class="card-title">Sữa rửa mặt HSkin Care (750ml)</h6>
+          <div style="display: flex;  align-items: center;">
             <p style="text-align: justify; font-size: 16px; line-height: 1.5; margin: 0;">
-              <span class="strikethrough">900.000đ</span> 700.000đ
+              <span class="strikethrough">900.000đ</span> <b>700.000đ</b>
             </p>
-            <div style="border: 1px solid red; font-size: 12px; margin: 0;">
+
+            <div style="border: 1px solid red; font-size: 12px; margin: 0 0 0 10px; border-radius: 3px;">
               <span style="color: red; font-weight: bold;">Bán chạy</span>
             </div>
           </div>
           <hr style="width: 100%;">
           <button type="button" class="btn btn-warning" style="width: 80%;">Đặt hàng</button>
-          <a>
+          <a style="margin-left: 20px;">
             <i class="fa-solid fa-cart-shopping"></i>
           </a>
         </div>
       </div>
-      <div class="card" style="width: 300px;height:auto;">
+      <div class="card" style="width: 300px;height:400px">
         <div class="img-card text-center">
           <img src="images/product/6.png" class="w-25 img-fluid" style=" height: 250px; text-align: center;" alt="anh6">
         </div>
         <div class="card-body">
-          <h5 class="card-title">Sữa rửa mặt HSkin Care (750ml)</h5>
-          <p style="text-align: justify; font-size: 16px; line-height: 1.5;"> <span
-              class="strikethrough">900.000đ</span>700.000đ</p>
+          <h6 class="card-title">Sữa rửa mặt HSkin Care (750ml)</h6>
+          <p style="text-align: justify; font-size: 16px; line-height: 1.5; margin: 0;">
+            <span class="strikethrough">900.000đ</span> <b>700.000đ</b>
+          </p>
+
           <hr style="width: 100%;">
           <button type="button" class="btn btn-warning" style="width: 80%;">Đặt hàng</button>
-          <a>
+          <a style="margin-left: 20px;">
             <i class="fa-solid fa-cart-shopping"></i>
           </a>
         </div>
       </div>
-      <div class="card" style="width: 300px;height:auto;">
+      <div class="card" style="width: 300px;height:400px">
         <div class="img-card text-center">
           <img src="images/product/7.png" class="w-25 img-fluid" style=" height: 250px; text-align: center;" alt="anh7">
         </div>
         <div class="card-body">
-          <h5 class="card-title">Sữa rửa mặt HSkin Care (750ml)</h5>
-          <p style="text-align: justify; font-size: 16px; line-height: 1.5;"> <span
-              class="strikethrough">900.000đ</span>700.000đ</p>
+          <h6 class="card-title">Sữa rửa mặt HSkin Care (750ml)</h6>
+          <p style="text-align: justify; font-size: 16px; line-height: 1.5; margin: 0;">
+            <span class="strikethrough">900.000đ</span> <b>700.000đ</b>
+          </p>
+
           <hr style="width: 100%;">
           <button type="button" class="btn btn-warning" style="width: 80%;">Đặt hàng</button>
-          <a>
+          <a style="margin-left: 20px;">
             <i class="fa-solid fa-cart-shopping"></i>
           </a>
         </div>
       </div>
-      <div class="card" style="width: 300px;height:auto;">
+      <div class="card" style="width: 300px;height:400px">
         <div class="img-card text-center">
           <img src="images/product/8.png" class="w-25 img-fluid" style=" height: 250px; text-align: center;" alt="anh8">
         </div>
         <div class="card-body">
-          <h5 class="card-title">Sữa rửa mặt HSkin Care (750ml)</h5>
-          <p style="text-align: justify; font-size: 16px; line-height: 1.5;"> <span
-              class="strikethrough">900.000đ</span>700.000đ</p>
+          <h6 class="card-title">Sữa rửa mặt HSkin Care (750ml)</h6>
+          <p style="text-align: justify; font-size: 16px; line-height: 1.5; margin: 0;">
+            <span class="strikethrough">900.000đ</span> <b>700.000đ</b>
+          </p>
+
           <hr style="width: 100%;">
           <button type="button" class="btn btn-warning" style="width: 80%;">Đặthàng</button>
-          <a>
+          <a style="margin-left: 20px;">
             <i class="fa-solid fa-cart-shopping"></i>
           </a>
         </div>
       </div>
     </div>
+
   </div>
-  <div class="favorite_products">
+  <div class="favorite_products section1">
     <div class="text-player">
       <h1 class="text3 text-center">Sản phẩm được yêu thích
         <img src="images/Icons-svg/lá cây/leaf.svg" alt="la">
@@ -426,6 +440,8 @@
           aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2"
           aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -440,12 +456,16 @@
                 <div class="col text-black">
                   <div class="row">
                     <div class="col">
-                      <h1 class="text1" style="font-size: 30px;">BỘ SẢN PHẨM CƠ BẢN</h1>
-                      <p style="text-align: justify; font-size: 16px; line-height: 1.5;">
-                        <span class="strikethrough">1.400.000đ</span>
-                        <span style="color: red;">1.260.000đ (-10%)</span>
-                      </p>
-
+                      <p class="text1" style="font-size: 30px;">Bộ sản phẩm cơ bản</p>
+                      <div class="d-flex">
+                        <p style="text-align: justify; font-size: 16px; line-height: 1.5;">
+                          <span class="strikethrough">1.400.000đ</span>
+                          <span style="color: red;"><b>1.260.000đ</b> </span>
+                        </p>
+                        <div style="border: 1px solid red; font-size: 15px; margin: 0 0 15px 10px; border-radius: 3px;padding: 2px 5px 2px;">
+                          <span style="color: red; font-weight: bold;">-10%</span>
+                        </div>
+                      </div>
                       <p style="font-size: 16px;">Dòng sản phẩm sửa rữa mặt và kem tẩy tế bào chết - lựa
                         chọn
                         hàng đầu cho làn da tươi trả và mịn màng</p>
@@ -473,18 +493,24 @@
                 <div class="col text-black">
                   <div class="row">
                     <div class="col">
-                      <h1 class="text1" style="font-size: 30px;">BỘ SẢN PHẨM CƠ BẢN</h1>
-                      <p style="text-align: justify; font-size: 16px; line-height: 1.5;">
-                        <span class="strikethrough">1.400.000đ</span>
-                        <span style="color: red;">1.260.000đ (-10%)</span>
-                      </p>
+                      <p class="text1" style="font-size: 30px;">Bộ sản phẩm cơ bản</p>
+                      <div class="d-flex">
+                        <p style="text-align: justify; font-size: 16px; line-height: 1.5;">
+                          <span class="strikethrough">1.400.000đ</span>
+                          <span style="color: red;"><b>1.260.000đ</b> </span>
+                        </p>
+                        <div style="border: 1px solid red; font-size: 15px; margin: 0 0 15px 10px; border-radius: 3px;padding: 2px 5px 2px;">
+                          <span style="color: red; font-weight: bold;">-10%</span>
+                        </div>
+                      </div>
                       <p style="font-size: 16px;">Dòng sản phẩm sửa rữa mặt và kem tẩy tế bào chết - lựa
                         chọn
                         hàng đầu cho làn da tươi trả và mịn màng</p>
                       <p style="font-size: 16px;">Tận hưởng trải nghiệm làm sạch sâu, loại bỏ tế bào chết, để lại làn da
                         mềm mại và rạng ngời. Chăm sóc da hiệu quả, đem lại sự tự tin mỗi ngày.</p>
                       <button type="button" class="btn btn-warning">Đặt hàng ngay</button>
-                      <button type="button" class="btn btn-outline-dark">Thêm vào giỏ hàng</button>
+                      <button type="button" class="btn btn-outline-dark" style="background-color: #fcf8ef;">Thêm vào giỏ
+                        hàng</button>
                     </div>
                   </div>
                 </div>
@@ -504,11 +530,53 @@
                 <div class="col text-black">
                   <div class="row">
                     <div class="col">
-                      <h1 class="text1" style="font-size: 30px;">BỘ SẢN PHẨM CƠ BẢN</h1>
-                      <p style="text-align: justify; font-size: 16px; line-height: 1.5;">
-                        <span class="strikethrough">1.400.000đ</span>
-                        <span style="color: red;">1.260.000đ (-10%)</span>
-                      </p>
+                      <p class="text1" style="font-size: 30px;">Bộ sản phẩm cơ bản</p>
+                      <div class="d-flex">
+                        <p style="text-align: justify; font-size: 16px; line-height: 1.5;">
+                          <span class="strikethrough">1.400.000đ</span>
+                          <span style="color: red;"><b>1.260.000đ</b> </span>
+                        </p>
+                        <div style="border: 1px solid red; font-size: 15px; margin: 0 0 15px 10px; border-radius: 3px;padding: 2px 5px 2px;">
+                          <span style="color: red; font-weight: bold;">-10%</span>
+                        </div>
+                      </div>
+                      <p style="font-size: 16px;">Dòng sản phẩm sửa rữa mặt và kem tẩy tế bào chết - lựa
+                        chọn
+                        hàng đầu cho làn da tươi trả và mịn màng</p>
+                      <p style="font-size: 16px;">Tận hưởng trải nghiệm làm sạch sâu, loại bỏ tế bào chết, để lại làn da
+                        mềm mại và rạng ngời. Chăm sóc da hiệu quả, đem lại sự tự tin mỗi ngày.</p>
+                      <button type="button" class="btn btn-warning">Đặt hàng ngay</button>
+                      <button type="button" class="btn btn-outline-dark" style="background-color: #fcf8ef;">Thêm vào giỏ
+                        hàng</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="favorite-card container position-relative">
+            <div class="row">
+              <div class="col-6">
+                <figure class="mb-0 text-end">
+                  <img src="images/product/7.png" class=" top-50 start-15  w-35 h-75" alt="Background Image 2">
+                </figure>
+              </div>
+              <div class="col-6 top-50 start-50 w-50 d-flex align-items-center">
+                <div class="col text-black">
+                  <div class="row">
+                    <div class="col">
+                      <p class="text1" style="font-size: 30px;">Bộ sản phẩm cơ bản</p>
+                      <div class="d-flex">
+                        <p style="text-align: justify; font-size: 16px; line-height: 1.5;">
+                          <span class="strikethrough">1.400.000đ</span>
+                          <span style="color: red;"><b>1.260.000đ</b> </span>
+                        </p>
+                        <div style="border: 1px solid red; font-size: 15px; margin: 0 0 15px 10px; border-radius: 3px;padding: 2px 5px 2px;">
+                          <span style="color: red; font-weight: bold;">-10%</span>
+                        </div>
+                      </div>
                       <p style="font-size: 16px;">Dòng sản phẩm sửa rữa mặt và kem tẩy tế bào chết - lựa
                         chọn
                         hàng đầu cho làn da tươi trả và mịn màng</p>
@@ -528,7 +596,7 @@
 
     </div>
   </div>
-  <div class="promotions position-relative">
+  <div class="promotions  position-relative">
     <div class="space" style="height: 100px;">
     </div>
     <div class="promotion-information row">
@@ -542,7 +610,7 @@
       </div>
       <div class="promotion-details col-7 d-flex ">
         <div class="promotion-section row">
-          <div class="promotion-title col">
+          <div class="promotion-title section1 col ">
             <h1 class="text3 text-center">Khuyến mãi
               <img src="images/Icons-svg/lá cây/leaf.svg" alt="la">
             </h1>
@@ -587,19 +655,19 @@
                   <div class="pr-product1" style="position: relative;">
                     <img class="pr-product1-img" src="images/product/10.png" alt="">
                     <div class="pr-product1-body" style="flex-grow: 1; position: relative;">
-                      <p class="pr-product1-title">Dưỡng ẩm da(350ml)</p>
+                      <p class="pr-product1-title">Dưỡng ẩm da (350ml)</p>
                       <div style="text-align: justify; font-size: 16px; line-height: 1.5; position: relative;">
                         <p>
                           <span class="strikethrough">900.000đ</span> 700.000đ
                         </p>
                         <div
-                          style="position: absolute; top: 0; right: 40px; border: 1px solid red; padding: 5px; font-size: 12px;">
+                          style="position: absolute; top: 0; right: 40px; border: 1px solid red; padding: 5px; font-size: 12px; border-radius: 5px;">
                           <span style="color: red; font-weight: bold;">-35%</span>
                         </div>
                       </div>
                       <hr style="width: 100%; opacity: 0.1;">
                       <button type="button" class="btn btn-warning" style="flex-shrink: 0;width: 80%;">Đặt hàng</button>
-                      <a style="flex-shrink: 0;">
+                      <a style="flex-shrink: 0;margin-left: 15px;">
                         <i class="fa-solid fa-cart-shopping"></i>
                       </a>
                     </div>
@@ -607,19 +675,19 @@
                   <div class="pr-product1" style="position: relative;">
                     <img class="pr-product1-img" src="images/product/8.png" alt="">
                     <div class="pr-product1-body" style="flex-grow: 1; position: relative;">
-                      <p class="pr-product1-title">Dưỡng ẩm da(350ml)</p>
+                      <p class="pr-product1-title">Sữa rửa mặt HSkincare (350ml)</p>
                       <div style="text-align: justify; font-size: 16px; line-height: 1.5; position: relative;">
                         <p>
                           <span class="strikethrough">900.000đ</span> 700.000đ
                         </p>
-                        <div
-                          style="position: absolute; top: 0; right: 40px; border: 1px solid red; padding: 5px; font-size: 12px;">
+                        <div style="position: absolute; top: 0; right: 40px; border: 1px solid red; padding: 5px; font-size: 12px;border-radius: 5px;">
                           <span style="color: red; font-weight: bold;">-35%</span>
                         </div>
                       </div>
                       <hr style="width: 100%;opacity: 0.1;">
-                      <button type="button" class="btn btn-warning" style="flex-shrink: 0; width: 80%;">Đặt hàng</button>
-                      <a style="flex-shrink: 0;">
+                      <button type="button" class="btn btn-warning" style="flex-shrink: 0; width: 80%;">Đặt
+                        hàng</button>
+                      <a style="flex-shrink: 0;margin-left: 15px;">
                         <i class="fa-solid fa-cart-shopping"></i>
                       </a>
                     </div>
@@ -637,13 +705,13 @@
                           <span class="strikethrough">900.000đ</span> 700.000đ
                         </p>
                         <div
-                          style="position: absolute; top: 0; right: 40px; border: 1px solid red; padding: 5px; font-size: 12px;">
+                          style="position: absolute; top: 0; right: 40px; border: 1px solid red; padding: 5px; font-size: 12px; border-radius: 5px;">
                           <span style="color: red; font-weight: bold;">-35%</span>
                         </div>
                       </div>
                       <hr style="width: 100%;opacity: 0.1;">
                       <button type="button" class="btn btn-warning" style="flex-shrink: 0;width: 80%;">Đặt hàng</button>
-                      <a style="flex-shrink: 0;">
+                      <a style="flex-shrink: 0;margin-left: 15px;">
                         <i class="fa-solid fa-cart-shopping"></i>
                       </a>
                     </div>
@@ -657,13 +725,14 @@
                           <span class="strikethrough">900.000đ</span> 700.000đ
                         </p>
                         <div
-                          style="position: absolute; top: 0; right: 40px; border: 1px solid red; padding: 5px; font-size: 12px;">
+                          style="position: absolute; top: 0; right: 40px; border: 1px solid red; padding: 5px; font-size: 12px;border-radius: 5px;">
                           <span style="color: red; font-weight: bold;">-35%</span>
                         </div>
                       </div>
                       <hr style="width: 100%;opacity: 0.1;">
-                      <button type="button" class="btn btn-warning" style="flex-shrink: 0; width: 80%;">Đặt hàng</button>
-                      <a style="flex-shrink: 0;">
+                      <button type="button" class="btn btn-warning" style="flex-shrink: 0; width: 80%;">Đặt
+                        hàng</button>
+                      <a style="flex-shrink: 0;margin-left: 15px;">
                         <i class="fa-solid fa-cart-shopping"></i>
                       </a>
                     </div>
@@ -680,7 +749,7 @@
                           class="strikethrough">900.000đ</span>700.000đ</p>
                       <hr style="width: 100%;opacity: 0.1;">
                       <button type="button" class="btn btn-warning" style="width: 80%;">Đặt hàng</button>
-                      <a>
+                      <a style="margin-left: 15px;">
                         <i class="fa-solid fa-cart-shopping"></i>
                       </a>
                     </div>
@@ -688,12 +757,12 @@
                   <div class="pr-product1">
                     <img class="pr-product1-img" src="images/product/12.png" alt="">
                     <div class="pr-product1-body">
-                      <p class="pr-product1-title">Dưỡng ẩm da(350ml)</p>
+                      <p class="pr-product1-title">Sửa rửa mặt HSkincare(350ml)</p>
                       <p style="text-align: justify; font-size: 16px; line-height: 1.5;"> <span
                           class="strikethrough">900.000đ</span>700.000đ</p>
                       <hr style="width: 100%;opacity: 0.1;">
-                      <button type="button" class="btn btn-warning"  style="width: 80%;">Đặt hàng</button>
-                      <a>
+                      <button type="button" class="btn btn-warning" style="width: 80%;">Đặt hàng</button>
+                      <a style="margin-left: 15px;">
                         <i class="fa-solid fa-cart-shopping"></i>
                       </a>
                     </div>
@@ -709,8 +778,8 @@
                       <p style="text-align: justify; font-size: 16px; line-height: 1.5;"> <span
                           class="strikethrough">900.000đ</span>700.000đ</p>
                       <hr style="width: 100%;opacity: 0.1;">
-                      <button type="button" class="btn btn-warning"  style="width: 80%;">Đặt hàng</button>
-                      <a>
+                      <button type="button" class="btn btn-warning" style="width: 80%;">Đặt hàng</button>
+                      <a style="margin-left: 15px;">
                         <i class="fa-solid fa-cart-shopping"></i>
                       </a>
                     </div>
@@ -722,8 +791,8 @@
                       <p style="text-align: justify; font-size: 16px; line-height: 1.5;"> <span
                           class="strikethrough">900.000đ</span>700.000đ</p>
                       <hr style="width: 100%;opacity: 0.1;">
-                      <button type="button" class="btn btn-warning"  style="width: 80%;">Đặt hàng</button>
-                      <a>
+                      <button type="button" class="btn btn-warning" style="width: 80%;">Đặt hàng</button>
+                      <a style="margin-left: 15px;">
                         <i class="fa-solid fa-cart-shopping"></i>
                       </a>
                     </div>
@@ -951,9 +1020,9 @@
       </div>
     </div>
   </div>
-  <div class="share d-flex flex-column align-items-center">
+  <div class="share section1 d-flex flex-column align-items-center">
     <div class="text-player">
-      <h1 class="text3 text-center">Sản phẩm được yêu thích
+      <h1 class="text3 text-center">Kinh nghiệm làm đẹp
         <img src="images/Icons-svg/lá cây/leaf.svg" alt="la">
       </h1>
       <p class="text4 text-center">ĐẸP MỖI NGÀY</p>
@@ -1154,7 +1223,7 @@
     </div>
     <button type="button" class="btn btn-warning">Xem tất cả</button>
   </div>
-  <div class="news d-flex flex-column align-items-center">
+  <div class="news section1 d-flex flex-column align-items-center">
     <div class="text-player">
       <h1 class="text3 text-center">Tin tức
         <img src="images/Icons-svg/lá cây/leaf.svg" alt="la">
